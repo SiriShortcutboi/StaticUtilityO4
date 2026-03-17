@@ -1,0 +1,16 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Program",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${workspaceFolder}/StaticUtilityO4/bin/Debug/net10.0/StaticUtilityO4.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/StaticUtilityO4",
+            "stopAtEntry": false,
+            "console": "integratedTerminal"
+        }
+    ]
+}

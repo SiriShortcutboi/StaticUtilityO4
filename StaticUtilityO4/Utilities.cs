@@ -1,8 +1,11 @@
 namespace Utilities
 {
-    public class Utilitiesclass{
-    static void methodthatmustbestatic()
+    public class UtilitiesClass
     {
+        public static void WelcomeMessage()
+        {
+        Console.WriteLine("Display welcome message");
+        }
         /* //Example Actions
         Display welcome message
 
@@ -27,6 +30,5 @@ namespace Utilities
 
         ❌ No constructors*/
 
-        }
     }
 }
