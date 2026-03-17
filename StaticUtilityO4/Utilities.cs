@@ -1,7 +1,10 @@
+using System.Collections.Generic;
+
 namespace UtilitiesSpace
 {
     public class UtilitiesClass
     {
+        static string response;
         public static void WelcomeMessage()
         {
             Console.WriteLine("\nHowdy do! Top of the mornin to ya!");
@@ -10,7 +13,7 @@ namespace UtilitiesSpace
         public static void UserResponseToUpper()
         {
             Console.Write("How are you today? ");
-            string? response = Console.ReadLine();
+            response = Console.ReadLine();
 
             if (string.IsNullOrWhiteSpace(response))
             {
@@ -18,9 +21,18 @@ namespace UtilitiesSpace
                 return;
             }
 
-            Console.WriteLine($"{response.ToUpper()}? Well... How about that. Isn't that wild?");
+            Console.WriteLine($"{response.ToUpper()}? Well... How about that? Isn't that wild?");
+        
         }
-        //let me know if public on a var is against the rules, 
+
+        public static void ResponseLengthMeasure()
+        {
+           char[] responseChars = response.ToCharArray();
+
+            Console.WriteLine($"{response.ToUpper()}? " + 
+            $"That's a {responseChars.Length} letter word isn't it?");
+        }
+        //let me know if public or static on a variable is against the rules, 
         // the system didnt seem to like "string response" or 
         // adding public to the start, but then indenting it with 
         // no public works out just fine?

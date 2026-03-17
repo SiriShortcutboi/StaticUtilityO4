@@ -9,6 +9,8 @@ public class Program
 	{
 		UtilitiesClass.WelcomeMessage();
 		UtilitiesClass.UserResponseToUpper();
+		UtilitiesClass.ResponseLengthMeasure();
+		
 		
 	}
 }
