@@ -1,9 +1,14 @@
 ﻿using System;
-using Utilities;			
+using UtilitiesSpace;
+
+namespace StaticUtilityO4;
+
 public class Program
 {
 	public static void Main()
 	{
-		Utilities.UtilitiesClass.WelcomeMessage();
+		UtilitiesClass.WelcomeMessage();
+		UtilitiesClass.UserResponseToUpper();
+		
 	}
 }
